@@ -21,7 +21,7 @@ export const processUserRequest = async (e) => {
         const weatherForSelectedDate = weatherForecast.data.find((weatherObject) => {
             return weatherObject.valid_date === depDate;
         })
-        const successPost = await postData('/add', {
+        const successPost = await postData("http://localhost:5000/add", {
             depCity,
             destCity,
             depDate,
@@ -41,7 +41,7 @@ export const processUserRequest = async (e) => {
 
 
 let getCredentialData = async () => {
-    const response = await fetch("/getCredentials");
+    const response = await fetch("http://localhost:5000/getCredentials");
     const credentialData = response.json();
     console.log(credentialData);
     return credentialData;
@@ -86,7 +86,7 @@ let getPixabayPhoto = async (pixabayAPIURL, pixabayAPIKey, destCity) => {
 
 
 const getAllData = async () => {
-    const response = await fetch("/allData");
+    const response = await fetch("http://localhost:5000/allData");
     const projectData = response.json();
     console.log(projectData);
     return projectData;
