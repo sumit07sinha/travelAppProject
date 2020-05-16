@@ -1,0 +1,93 @@
+body{
+    background: url("https://cdn.pixabay.com/photo/2020/04/17/14/16/mountains-5055387_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container{
+    display: grid;
+    grid-template-rows: 60px 512px 37px;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  #About{
+      text-align: center;
+      background-color: rgb(53,78,133);
+      color: white;
+      margin-left: 25%;
+      margin-right: 25%;
+      border-radius: 20px;
+      z-index: 10;
+      opacity: 90%;
+  }
+  #plan{
+      text-align: center;
+      background-color: aliceblue;
+      margin-top: 10px;
+      margin-left: 25%;
+      margin-right: 25%;
+      display: block;
+      min-height:auto;
+      padding: 10px;
+      border-radius: 20px;
+      line-height: 10px;
+  }
+  #fromPixabay{
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      position: absolute;
+      margin-top: 20px;
+  }
+  .result{
+    text-align: left;
+    background-color: aliceblue;
+    margin: 10px 25%;
+    display: block;
+    min-height:auto;
+    padding: 10px;
+    border-radius: 20px;
+    line-height: 10px;
+    position: relative;
+  }
+  .resultData{
+      margin-left: 160px;
+  }
+  .invisible{
+      display: none;
+  }
+  footer{
+      background-color: white;
+      text-align: center;
+      height: 35px;
+      padding: 5px;
+      clear: both;
+  }

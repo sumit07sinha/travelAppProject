@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#plan">Plan</a></li>
+
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section id="About">
+                <h3>Time to Travel</h3>
+                <h3>Your ultimate travel planner</h3>
+                <h3>Enjoy world trip with us.</br>
+                    “LIFE IS EITHER A DARING ADVENTURE OR NOTHING AT ALL” ~ HELEN KELLER</h3>
+            </section>
+            <section id="plan" data-nav="plan">
+                <form id="form">
+                    <h2>Plan your trip</h2>
+                    <input type="text" name="from" placeholder="Leaving from..." id="departure" required>
+                    <input type="text" name="to" placeholder="Going to..." id="destination" required></br>
+                    <label class="date__label" for="date">Travelling on...</label>
+                    <input type="date" id="depDate" name="date" required>
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                </form>
+
+            </section>
+            <section id="resultContainer" class="result invisible">
+                <div class="imageResult">
+                    <img src="https://images.newscientist.com/wp-content/uploads/2017/06/21180000/planet-10-orange-blue-final-small.jpg"
+                        alt="destination image" id="fromPixabay">
+                </div>
+                <div class="resultData">
+                    <h4>Destination: <span id="city"></span></h4>
+                    <h4>Departure Date: <span id="date"></span></h4>
+                    <h4>You are travelling after <span id="days"></span> days.</h4>
+                    <h4>Expected temperature will be: <span id="temp"></span>,
+                        <span id="weatherCondition"></span>.</h4>
+
+                    <a class="saveButon" id="save" href="#">Print</a>
+                    <a class="deleteButton" id="delete" href="#">Delete</a>
+
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div>
+                <p>All rights reserved ©</p>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
